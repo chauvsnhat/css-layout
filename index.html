@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Target Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@heroicons/react@2.1.3/24/outline/index.js"></script>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-100 text-gray-700 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+    <div class="max-w-[1100px] mx-auto flex justify-between items-center py-4 px-6">
+      <div class="flex items-center space-x-2">
+        <div class="w-10 h-10 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="red" class="w-10 h-10">
+            <circle cx="12" cy="12" r="10" stroke="red" />
+            <circle cx="12" cy="12" r="6" stroke="red" />
+            <circle cx="12" cy="12" r="2" fill="red" />
+          </svg>
+        </div>
+        <span class="text-xl font-semibold text-gray-700">Target</span>
+        <span class="text-sm text-gray-400 ml-2">Premium landing page template</span>
+      </div>
+      <div>
+        <span class="text-sm text-red-600 mr-2">Call Now!</span>
+        <span class="text-red-600 font-semibold">1-800-123-456</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-white border-b border-gray-200">
+    <div class="max-w-[1100px] mx-auto grid md:grid-cols-2 gap-6 py-8 px-6 items-center">
+      <div class="p-6 bg-white rounded-lg shadow-md">
+        <h1 class="text-3xl font-bold mb-4">The perfect way to convert your traffic into sales</h1>
+        <p class="text-gray-600 mb-6">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat voluptat. Epsum factorial non deposit quid pro quo hic escorol Olypian quarrels et gorilla congolium sic ad nauseum.
+        </p>
+        <div class="flex items-center space-x-4">
+          <button class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full shadow-lg">Purchase now!</button>
+          <span class="text-gray-400">or</span>
+          <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-6 py-3 rounded-full shadow-lg">Take a tour</button>
+        </div>
+      </div>
+      <div class="relative overflow-hidden rounded-lg shadow-md">
+        <div class="slider w-full h-64 md:h-72 lg:h-80">
+          <input type="radio" name="slide" id="slide1" class="hidden" checked>
+          <input type="radio" name="slide" id="slide2" class="hidden">
+          <div class="slides">
+            <img src="\images\image1.jpg" alt="nature" class="slide w-full h-full object-cover">
+            <img src="\images\image2.jpg" alt="tree" class="slide w-full h-full object-cover">
+          </div>
+        </div>
+        <label for="slide1" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-blue-200 text-blue-800 rounded-full p-2 shadow-md hover:bg-blue-300" aria-label="Previous slide">◄</label>
+        <label for="slide2" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-blue-200 text-blue-800 rounded-full p-2 shadow-md hover:bg-blue-300" aria-label="Next slide">►</label>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+<section class="bg-white border-b border-gray-200">
+  <div class="max-w-[1100px] mx-auto grid md:grid-cols-3 gap-6 py-10 px-6 text-center md:text-left">
+
+    <!-- Quick and Easy -->
+    <div class="flex flex-col items-center md:items-start">
+      <div class="mb-4 bg-blue-100 p-3 rounded-full">
+        <!-- Heroicon: Clock -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(59,130,246)" class="w-8 h-8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2m6-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </div>
+      <h3 class="font-semibold mb-2">Quick and easy</h3>
+      <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+    </div>
+
+    <!-- Less Risky -->
+    <div class="flex flex-col items-center md:items-start">
+      <div class="mb-4 bg-green-100 p-3 rounded-full">
+        <!-- Heroicon: Shield Check -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(16,185,129)" class="w-8 h-8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2l4-4m1.382-4.763l-6-2a2 2 0 00-1.764 0l-6 2A2 2 0 002 6.236v5.638c0 5.052 3.222 9.67 8 11.126c4.778-1.456 8-6.074 8-11.126V6.236a2 2 0 00-1.618-1.999z" />
+        </svg>
+      </div>
+      <h3 class="font-semibold mb-2">Less risky</h3>
+      <p class="text-sm text-gray-500">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie.</p>
+    </div>
+
+    <!-- Optimized -->
+    <div class="flex flex-col items-center md:items-start">
+      <div class="mb-4 bg-yellow-100 p-3 rounded-full">
+        <!-- Heroicon: Rocket Launch -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(234,179,8)" class="w-8 h-8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 14.25L3 21l6.75-2.25M15.75 9.75L21 3l-6.75 2.25M6 18l2.25-6.75l8.25-8.25M12 12l9 9" />
+        </svg>
+      </div>
+      <h3 class="font-semibold mb-2">Optimized</h3>
+      <p class="text-sm text-gray-500">Epsum factorial non deposit quid pro quo hic escorol Olypian quarrels et gorilla.</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Check out features -->
+  <section class="bg-white border-b border-gray-200">
+    <div class="max-w-[1100px] mx-auto grid md:grid-cols-2 gap-6 py-10 px-6">
+      <div>
+        <h2 class="font-semibold text-lg mb-4">Check out the features</h2>
+        <p class="text-gray-600 mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat voluptat. Epsum factorial non deposit quid pro quo hic escorol Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquese selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutamate.
+        </p>
+      </div>
+      <div class="space-y-2">
+        <div class="flex items-center">
+          <span class="text-white mr-2 flex items-center justify-center w-5 h-5 rounded-full bg-orange-500">•</span>
+          <span class="text-gray-600">Lorem ipsum dolor sit amet</span>
+        </div>
+        <div class="flex items-center">
+          <span class="text-white mr-2 flex items-center justify-center w-5 h-5 rounded-full bg-orange-500">•</span>
+          <span class="text-gray-600">Consectetuer adipiscing elit sed diam</span>
+        </div>
+        <div class="flex items-center">
+          <span class="text-white mr-2 flex items-center justify-center w-5 h-5 rounded-full bg-orange-500">•</span>
+          <span class="text-gray-600">Nihil euismod tincidunt ut</span>
+        </div>
+        <div class="flex items-center">
+          <span class="text-white mr-2 flex items-center justify-center w-5 h-5 rounded-full bg-orange-500">•</span>
+          <span class="text-gray-600">Laoreet dolore magna aliquam erat</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section class="bg-white border-b border-gray-200">
+    <div class="max-w-[1100px] mx-auto py-10 px-6">
+      <h2 class="font-semibold text-lg mb-4">The screenshots</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="bg-[url('https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1176')] bg-cover h-36 rounded-lg shadow-md"></div>
+        <div class="bg-[url('https://plus.unsplash.com/premium_photo-1673697239981-389164b7b87f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1144')] bg-cover h-36 rounded-lg shadow-md"></div>
+        <div class="bg-[url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1174')] bg-cover h-36 rounded-lg shadow-md"></div>
+        <div class="bg-[url('https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170')] bg-cover h-36 rounded-lg shadow-md"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial -->
+  <section class="bg-white border-b border-gray-200">
+    <div class="max-w-[1100px] mx-auto py-10 px-6">
+      <h2 class="text-gray-700 font-semibold mb-4 text-center">See what our customers are saying...</h2>
+      <blockquote class="border-2 border-gray-300 bg-white p-4 rounded-lg shadow-md text-gray-600 italic max-w-[800px] mx-auto mb-4">
+        “Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium.”
+      </blockquote>
+      <p class="text-sm text-gray-400 text-center mb-4">Mike Tyson, Microsoft</p>
+      <div class="flex justify-center items-center mt-4">
+        <button class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg shadow mr-2">Purchase now!</button>
+        <span class="text-gray-400 mr-2">or</span>
+        <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-6 py-3 rounded-lg shadow">Take a tour</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#1b2431] text-gray-300">
+    <!-- Hàng trên: 3 cột + logo giống header -->
+    <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
+      <!-- Cột 1 -->
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-4">Payment method</h3>
+        <p class="text-sm mb-4">
+        Ma quandoce lingue coalesce, grammatica del resultant lingue es plu simplic e regulari quam li Europan.
+        </p>
+        <div class="flex space-x-3 items-center">
+          <img src="/images/visa.png" alt="Visa" class="w-10 h-6 object-contain bg-white rounded p-1">
+          <img src="/images/mastercard.png" alt="MasterCard" class="w-10 h-6 object-contain bg-white rounded p-1">
+          <img src="/images/paypal.png" alt="Paypal" class="w-10 h-6 object-contain bg-white rounded p-1">
+        </div>
+    </div>
+
+
+  
+      <!-- Cột 2 -->
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-4">Get in touch</h3>
+        <p class="text-sm">123 Main Street #3<br>San Francisco, CA 94101</p>
+        <p class="text-sm mt-2">Phone: (669) 123-4567</p>
+        <p class="text-sm">Email: webdesign@shagy.pl</p>
+      </div>
+  
+      <!-- Cột 3 -->
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-4">Design details</h3>
+        <p class="text-sm">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy.
+        </p>
+      </div>
+  
+      <!-- Cột 4: Logo giống header -->
+      <div class="flex md:justify-end items-start">
+        <div class="flex items-center space-x-2">
+          <div class="w-10 h-10 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="w-10 h-10">
+              <circle cx="12" cy="12" r="10" stroke="white" />
+              <circle cx="12" cy="12" r="6" stroke="white" />
+              <circle cx="12" cy="12" r="2" fill="white" />
+            </svg>
+          </div>
+          <span class="text-2xl font-bold text-white">Target</span>
+
+        </div>
+      </div>
+    </div>
+  
+    <!-- Dòng cuối của footer -->
+    <div class="bg-[#1a1d22] border-t border-gray-700 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+          <!-- Bản quyền -->
+            <p class="text-sm text-gray-400 text-center md:text-left mb-4 md:mb-0">
+              Copyright © 2011 Target. All rights reserved. Design by 
+            <a href="#" class="text-orange-400 hover:text-orange-500">Shagy</a>
+            </p>
+
+        <!-- Icon mạng xã hội -->
+        <div class="flex space-x-3">
+            <a href="#" class="w-8 h-8 rounded-full bg-gray-700 hover:bg-gray-500 flex items-center justify-center text-gray-300 hover:text-white transition">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-gray-700 hover:bg-gray-500 flex items-center justify-center text-gray-300 hover:text-white transition">
+               <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-gray-700 hover:bg-gray-500 flex items-center justify-center text-gray-300 hover:text-white transition">
+               <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-gray-700 hover:bg-gray-500 flex items-center justify-center text-gray-300 hover:text-white transition">
+              <i class="fab fa-dribbble"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-gray-700 hover:bg-gray-500 flex items-center justify-center text-gray-300 hover:text-white transition">
+               <i class="fas fa-rss"></i>
+            </a>
+        </div>
+        </div>
+    </div>
+
+  </footer>
+  
+  
+</body>
+</html>
